@@ -19,7 +19,7 @@ const items = [
 
 export default function Content() {
   return (
-    <div className="relative bg-[#1E1E1E] py-10 overflow-hidden">
+    <div className="relative bg-[#1E1E1E] py-10 overflow-hidden rounded-b-4xl">
       {/* CSS LANGSUNG DI COMPONENT */}
       <style>
         {`
@@ -41,7 +41,7 @@ export default function Content() {
       </style>
 
       <div className="w-full overflow-hidden">
-        <div className="scroll-track">
+        <div className="scroll-track gap-8">
           {[...items, ...items].map((item, i) => (
             <div
               key={i}
