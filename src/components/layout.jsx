@@ -1,4 +1,4 @@
-import kama from "../assets/awal.PNG";
+import kama from "../assets/awal.png";
 
 export default function Layout() {
   return (
