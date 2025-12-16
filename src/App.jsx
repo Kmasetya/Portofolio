@@ -5,7 +5,7 @@ import Navbar from "./components/navbar";
 import Layout from "./components/layout";
 import "./App.css";
 import Content from "./components/content";
-
+import Profil from "./components/profil";
 function App() {
   const [count, setCount] = useState(0);
 
@@ -14,10 +14,10 @@ function App() {
       <div className="bg-black">
         <Navbar />
         <div className="bg-[#1E1E1E] rounded-b-4xl">
-          <Layout></Layout>
+          <Layout />
           <Content />
         </div>
-        sakhkahs
+        <Profil />
       </div>
     </>
   );
