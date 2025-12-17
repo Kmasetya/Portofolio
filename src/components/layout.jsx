@@ -3,7 +3,7 @@ import kama from "../assets/awal.png";
 export default function Layout() {
   return (
     <div className="relative min-h-screen overflow-hidden bg-[#0A4788] text-white rounded-b-4xl">
-      {/* Radial circle */}
+      {/* RADIAL CIRCLE (TETAP) */}
       <div
         className="
           absolute
@@ -11,11 +11,14 @@ export default function Layout() {
           left-[30%]
           -translate-x-1/2
           -translate-y-1/2
-          w-[1100px]
-          h-[1000px]
+          w-[500px]
+          h-[500px]
+          md:w-[1100px]
+          md:h-[1000px]
           bg-[#B2B1B4]
           rounded-full
-          blur-[150px]
+          blur-[120px]
+          md:blur-[150px]
         "
       />
 
@@ -33,7 +36,27 @@ export default function Layout() {
           md:pt-0
         "
       >
-        {/* TEKS UTAMA */}
+        {/* ================= MOBILE BACKGROUND FOTO ================= */}
+        <img
+          src={kama}
+          alt="foto"
+          className="
+            absolute
+            bottom-0
+            left-1/2
+            -translate-x-1/2
+            w-[280px]
+            sm:w-[340px]
+            opacity-40
+            grayscale
+            z-10
+            md:hidden
+      
+          "
+          style={{ pointerEvents: "none" }}
+        />
+
+        {/* ================= TEKS UTAMA (TIDAK DIUBAH DESKTOP) ================= */}
         <div
           className="
             relative
@@ -42,6 +65,7 @@ export default function Layout() {
             md:text-left
             px-6
             md:pl-14
+            top-10
           "
         >
           <div className="text-[20px] md:text-[30px] leading-tight">
@@ -57,7 +81,7 @@ export default function Layout() {
           </div>
         </div>
 
-        {/* TEKS FRONTEND */}
+        {/* ================= TEKS FRONTEND (DESKTOP TETAP) ================= */}
         <div
           className="
             relative
@@ -70,6 +94,7 @@ export default function Layout() {
             z-20
             text-center
             md:text-left
+            top-10
           "
         >
           <div className="text-[18px] md:text-[27px] font-semibold leading-tight">
@@ -83,22 +108,20 @@ export default function Layout() {
           </div>
         </div>
 
-        {/* FOTO */}
+        {/* ================= FOTO DESKTOP ASLI ================= */}
         <img
           src={kama}
           alt="foto"
           className="
+            hidden
+            md:block
             relative
-            mt-6
-            md:mt-0
             md:absolute
             md:top-1/2
             md:left-1/2
             md:-translate-x-1/2
             md:-translate-y-1/2
-            w-[320px]
-            sm:w-[380px]
-            md:w-[600px]
+            w-[600px]
             h-auto
             z-10
             grayscale

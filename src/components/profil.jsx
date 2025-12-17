@@ -2,33 +2,11 @@ import Foto from "../assets/profil/1.png";
 
 export default function Profil() {
   return (
-    <div
-      className="
-      flex
-      flex-col
-      md:flex-row
-      mt-10
-      p-6
-      md:p-10
-      text-white
-      justify-center
-      gap-10
-      md:gap-20
-    "
-    >
+    <div className="flex flex-col md:flex-row mt-10 p-6 md:p-10 text-white justify-center gap-10 md:gap-20 ">
       <img
         src={Foto}
         alt="profil"
-        className="
-          w-full
-          max-w-[450px]
-          h-auto
-          mx-auto
-          grayscale
-          transition
-          duration-300
-          hover:grayscale-0
-        "
+        className="block mx-auto w-full max-w-[360px] sm:max-w-[420px] md:max-w-[450px] h-auto grayscale transition-all duration-300 ease-in-out hover:grayscale-0 hover:scale-105"
       />
 
       <div className="max-w-xl pt-6 md:pt-24 text-center md:text-left">

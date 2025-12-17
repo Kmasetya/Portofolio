@@ -1,23 +1,35 @@
 import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
 import Navbar from "./components/navbar";
 import Layout from "./components/layout";
-import "./App.css";
 import Content from "./components/content";
 import Profil from "./components/profil";
+import Project from "./components/project";
+import "./App.css";
+
 function App() {
   const [count, setCount] = useState(0);
 
   return (
     <>
-      <div className="bg-black">
+      <div className="bg-black font-sans">
+        {/* Navbar */}
         <Navbar />
-        <div className="bg-[#1E1E1E] rounded-b-4xl">
+
+        {/* HOME SECTION */}
+        <section id="home" className="bg-[#1E1E1E]">
           <Layout />
-          <Content />
-        </div>
-        <Profil />
+        </section>
+        <Content />
+
+        {/* ABOUT SECTION */}
+        <section id="about">
+          <Profil />
+        </section>
+
+        {/* PROJECTS SECTION */}
+        <section id="projects">
+          <Project />
+        </section>
       </div>
     </>
   );
