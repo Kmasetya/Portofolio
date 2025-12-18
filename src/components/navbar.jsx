@@ -18,7 +18,12 @@ export default function Navbar() {
     >
       <div className="max-w-7xl mx-auto py-2 px-4 flex items-center justify-between">
         {/* Logo */}
-        <div className="text-2xl font-bold text-white">KD</div>
+        <div
+          className="text-2xl font-bold text-white cursor-pointer"
+          onClick={() => scrollToSection("home")}
+        >
+          KD
+        </div>
 
         {/* Desktop Menu */}
         <ul className="hidden md:flex items-center gap-4 text-white font-medium">
@@ -40,7 +45,12 @@ export default function Navbar() {
           >
             Projects
           </li>
-          <button className="hidden md:block bg-blue-600 text-white px-5 py-2 rounded-2xl hover:bg-blue-700 transition">
+
+          {/* FIXED CONTACT */}
+          <button
+            onClick={() => scrollToSection("contact")}
+            className="bg-blue-600 text-white px-5 py-2 rounded-2xl hover:bg-blue-700 transition"
+          >
             Contact
           </button>
         </ul>
@@ -87,7 +97,12 @@ export default function Navbar() {
           >
             Projects
           </li>
-          <button className="bg-blue-600 text-white px-5 py-2 rounded-2xl hover:bg-blue-700 transition">
+
+          {/* FIXED CONTACT (MOBILE) */}
+          <button
+            onClick={() => scrollToSection("contact")}
+            className="bg-blue-600 text-white px-5 py-2 rounded-2xl hover:bg-blue-700 transition"
+          >
             Contact
           </button>
         </ul>

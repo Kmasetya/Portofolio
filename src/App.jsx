@@ -4,34 +4,43 @@ import Layout from "./components/layout";
 import Content from "./components/content";
 import Profil from "./components/profil";
 import Project from "./components/project";
+import Contact from "./components/contact";
 import "./App.css";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
-    <>
-      <div className="bg-black font-sans">
-        {/* Navbar */}
-        <Navbar />
+    <div className="bg-black font-sans">
+      <Navbar />
 
-        {/* HOME SECTION */}
-        <section id="home" className="bg-[#1E1E1E]">
+      {/* HOME */}
+      <section
+        id="home"
+        className="relative min-h-screen bg-[#1E1E1E] overflow-hidden"
+      >
+        {/* CONTENT */}
+        <div className="relative z-10">
           <Layout />
-        </section>
-        <Content />
+        </div>
+      </section>
 
-        {/* ABOUT SECTION */}
-        <section id="about">
+      <Content />
+
+      <section id="about" className="relative overflow-hidden">
+        <div className="relative z-10">
           <Profil />
-        </section>
+        </div>
+      </section>
 
-        {/* PROJECTS SECTION */}
-        <section id="projects">
+      <section id="projects" className="pb-10 relative overflow-hidden">
+        <div className="relative z-10">
           <Project />
-        </section>
-      </div>
-    </>
+        </div>
+      </section>
+
+      <section id="contact">
+        <Contact />
+      </section>
+    </div>
   );
 }
 
