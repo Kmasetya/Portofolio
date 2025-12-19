@@ -1,5 +1,4 @@
-import kama from "../assets/awal.png";
-
+import kama from "../../assets/awal.png";
 export default function Layout() {
   return (
     <div className="relative min-h-screen overflow-hidden bg-[#0A4788] text-white rounded-b-4xl">

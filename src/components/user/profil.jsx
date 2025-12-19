@@ -1,4 +1,4 @@
-import Foto from "../assets/profil/1.png";
+import Foto from "../../assets/profil/1.png";
 import { motion } from "framer-motion";
 
 export default function Profil() {

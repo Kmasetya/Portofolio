@@ -1,11 +1,11 @@
 import React from "react";
-import Figma from "../assets/animasi/figma.png";
-import Vscode from "../assets/animasi/vscode.png";
-import Css from "../assets/animasi/css.png";
-import Js from "../assets/animasi/js.png";
-import Github from "../assets/animasi/github.png";
-import Html from "../assets/animasi/html.png";
-import React1 from "../assets/animasi/react.png";
+import Figma from "../../assets/animasi/figma.png";
+import Vscode from "../../assets/animasi/vscode.png";
+import Css from "../../assets/animasi/css.png";
+import Js from "../../assets/animasi/js.png";
+import Github from "../../assets/animasi/github.png";
+import Html from "../../assets/animasi/html.png";
+import React1 from "../../assets/animasi/react.png";
 
 const items = [
   { img: Figma, name: "Figma" },

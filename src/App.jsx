@@ -1,10 +1,11 @@
 import { useState } from "react";
-import Navbar from "./components/navbar";
-import Layout from "./components/layout";
-import Content from "./components/content";
-import Profil from "./components/profil";
-import Project from "./components/project";
-import Contact from "./components/contact";
+import Navbar from "./components/user/navbar";
+import Layout from "./components/user/layout";
+import Content from "./components/user/content";
+import Profil from "./components/user/profil";
+import Project from "./components/user/project";
+import Contact from "./components/user/contact";
+import { MovingBorderDemo } from "./components/MovingBorderDemo";
 import "./App.css";
 
 function App() {
@@ -31,9 +32,10 @@ function App() {
         </div>
       </section>
 
-      <section id="projects" className="pb-10 relative overflow-hidden">
+      <section id="projects" className="pb-20 relative overflow-hidden">
         <div className="relative z-10">
           <Project />
+          <MovingBorderDemo />
         </div>
       </section>
 
